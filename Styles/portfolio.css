@@ -95,6 +95,9 @@ main{
     max-width: 1140px;
     margin: 0px auto;
 }
+main section{
+    margin-top: 120px;
+}
 .about{
     background-color: #fff8f3;
     padding: 130px;
@@ -136,10 +139,15 @@ main{
 }
 .skill-cont{
     display: flex;
+    margin: 20px 0px;
+    gap: 24px;
 }
 .skill{
-    box-shadow: 5px 5px 5px rgb(206, 199, 199) ;
+    box-shadow: 0px 5px 50px 0px rgb(230, 221, 221) ;
     margin-right: 20px;
+    padding: 33px;
+    border-radius: 5px;
+    background: #FFF;
     
 }
 .skill-title{
@@ -148,8 +156,19 @@ main{
 .skill-des{
     text-align:left;
     font-size: 18px;
-    color: #474747;
-    padding: 0px 70px 0px 0px;
-    line-height: 30px;
+    color: #807d7d;
     margin-bottom: 20px;
+}
+/* Resume style */
+.resume-col-title{
+    font-size: 30px;
+    font-weight:700;
+    color: #474747;
+}
+.resume-cont{
+    display: flex;
+}
+.resume-item-title{
+    font-size: 18px;
+    font-weight: 500;
 }
