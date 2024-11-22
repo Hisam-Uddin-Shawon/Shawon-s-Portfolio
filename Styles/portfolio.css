@@ -1,7 +1,7 @@
-*{
+/* *{
     /* margin: 0px;
     padding: 0px; */
-}
+ 
 
 /* nav related style */
 nav{
@@ -44,11 +44,10 @@ nav a{
     border:none;
     padding: 18px 35px;
     color: white;
+    margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
-nav>ul{
-    
-}
+
 nav>h3{
     font-size: 45px;
 }
@@ -101,6 +100,7 @@ main{
 main section{
     margin-top: 120px;
 }
+/* About Style */
 .about{
     background-color: #fff8f3;
     padding: 130px;
@@ -116,7 +116,7 @@ main section{
     color: #757575;
     text-align: center;
     font-size: 18px;
-    margin: 30px 0px;
+    margin: auto;
 }
 
 .about-info-cont{
@@ -133,6 +133,12 @@ main section{
 .about-des{
     font-size: 20px;
 }
+
+/* What I do style */
+.what-i-do{
+    width: 95%;
+    margin: 0 auto;
+}
 #do-des{
     padding: 0px 130px;
     text-align: center;
@@ -140,14 +146,17 @@ main section{
     color: #474747;
     margin-bottom: 40px;
 }
+/* Skills style */
 .skill-cont{
     display: flex;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     gap: 24px;
+    /* width: 95%; */
+    margin: 0 auto;
 }
 .skill{
     box-shadow: 0px 5px 50px 0px rgb(230, 221, 221) ;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 33px;
     border-radius: 5px;
     background: #FFF;
@@ -163,17 +172,17 @@ main section{
     margin-bottom: 20px;
 }
 /* Resume style */
+
+.resume-cont{
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
 .resume-col-title{
     font-size: 30px;
     font-weight:700;
     color: #474747;
-}
-.resume-cont{
-    display: flex;
-    gap: 40px;
-}
-.resume-item{
-
 }
 .resume-item-title{
     font-size: 20px;
@@ -241,4 +250,76 @@ footer p{
     font-size: 20px;
     color: #757575;
     margin-bottom: 35px;
+}
+
+.hide{
+    display: none;
+}
+
+/* Responsive Styles */
+
+/* Mobile Device */
+@media screen and (max-width: 576px ) {
+    .skill-cont{
+        flex-direction: column;
+    }
+    #do-des{
+        padding: 20px;
+    }
+    .resume-cont{
+        flex-direction: column;
+    }
+
+    footer{
+        padding: 15px;
+    }
+    .foot-cont{
+        padding: 15px;
+        flex-direction: column;
+    }
+    .foot-col-1,.foot-col-2{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"]{
+        width: 70%;
+    }
+    footer textarea{
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    
+    .about{
+        padding: 20px;
+    }
+    .about-info-cont{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4px;
+    }
+
+    .header{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    nav{
+        padding: 0;
+        flex-direction: column;
+    }
+    nav ul{
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* nav li{
+        margin-right: 20px;
+    } */
+    .banner{
+        flex-direction: column;
+        padding-left: 100px;
+    }
+    .profile-pic{
+        width: 300px;
+        margin-right: 60px;
+    }
+    
 }
