@@ -291,10 +291,10 @@ footer p{
     .about{
         padding: 20px;
     }
-    .about-info-cont{
+    .about-info-cont {
         display: grid;
+        justify-content: space-around;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 4px;
     }
 
     .header{
